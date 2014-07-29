@@ -1,5 +1,5 @@
 {
-  "name": "angular-leaflet-directive",
+  "name": "angular-leaflet-directive-ws",
   "description": "AngularJS directive to embed an interact with maps managed by Leaflet library",
   "keywords": [
     "angularjs",
@@ -43,5 +43,11 @@
     "Gruntfile.js",
     "package.json",
     "bower.json"
-  ]
+  ],
+  "version": "0.7.7",
+  "homepage": "https://github.com/ws-anashkin/angular-leaflet-directive",
+  "authors": [
+    "ws-anashkin <ws.anashkin@gmail.com>"
+  ],
+  "license": "MIT"
 }
