@@ -42,9 +42,12 @@
     "*.md",
     "Gruntfile.js",
     "package.json",
-    "bower.json"
+    "bower.json",
+    "node_modules",
+    "bower_components",
+    "tests"
   ],
-  "version": "0.7.7",
+  "version": "0.8",
   "homepage": "https://github.com/ws-anashkin/angular-leaflet-directive",
   "authors": [
     "ws-anashkin <ws.anashkin@gmail.com>"
