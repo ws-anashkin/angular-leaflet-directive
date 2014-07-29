@@ -94,9 +94,11 @@
           map.whenReady(function () {
             leafletData.setMap(map, attrs.id);
           });
+
           $rootScope.$on('triggerLeafletResize', function () {
             map._onResize();
           });
+          
           scope.$on('$destroy', function () {
             leafletData.unresolveMap(attrs.id);
           });
