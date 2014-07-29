@@ -2,11 +2,12 @@
   'use strict';
   angular.module('leaflet-directive', []).directive('leaflet', [
     '$q',
+    '$rootScope',
     'leafletData',
     'leafletMapDefaults',
     'leafletHelpers',
     'leafletEvents',
-    function ($q, leafletData, leafletMapDefaults, leafletHelpers, leafletEvents) {
+    function ($q, $rootScope, leafletData, leafletMapDefaults, leafletHelpers, leafletEvents) {
       var _leafletMap;
       return {
         restrict: 'EA',
@@ -94,6 +95,11 @@
           map.whenReady(function () {
             leafletData.setMap(map, attrs.id);
           });
+
+          $rootScope.$on('triggerLeafletResize', function () {
+            map._onResize();
+          });
+          
           scope.$on('$destroy', function () {
             leafletData.unresolveMap(attrs.id);
           });
