@@ -7,7 +7,8 @@
     'leafletMapDefaults',
     'leafletHelpers',
     'leafletEvents',
-    function ($q, $rootScope, leafletData, leafletMapDefaults, leafletHelpers, leafletEvents) {
+    'leafletMarkersHelpers',
+    function ($q, $rootScope, leafletData, leafletMapDefaults, leafletHelpers, leafletEvents, leafletMarkersHelpers) {
       var _leafletMap;
       return {
         restrict: 'EA',
@@ -101,7 +102,6 @@
           });
           
           scope.$on('$destroy', function () {
-            console.log("$destroy$destroy$destroy")
             leafletData.unresolveMap(attrs.id);
             leafletMarkersHelpers.resetCurrentGroups();
 
