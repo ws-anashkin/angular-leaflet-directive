@@ -101,7 +101,10 @@
           });
           
           scope.$on('$destroy', function () {
+            console.log("$destroy$destroy$destroy")
             leafletData.unresolveMap(attrs.id);
+            leafletMarkersHelpers.resetCurrentGroups();
+
           });
         }
       };
@@ -2542,6 +2545,9 @@
               markerData.focus = false;
             });
           });
+        },
+        resetCurrentGroups: function () {
+          groups = {};
         },
         addMarkerWatcher: function (marker, name, leafletScope, layers, map) {
           var clearWatch = leafletScope.$watch('markers.' + name, function (markerData, oldMarkerData) {
