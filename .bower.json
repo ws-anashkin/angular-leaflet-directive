@@ -56,7 +56,7 @@
   "_release": "0.9.3",
   "_resolution": {
     "type": "version",
-    "tag": "v0.9.3",
+    "tag": "v0.9.4",
     "commit": "3597d8b3edf17c520cd44652262b254f9b3bd766"
   },
   "_source": "git://github.com/ws-anashkin/angular-leaflet-directive.git",
