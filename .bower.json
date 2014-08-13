@@ -47,13 +47,13 @@
     "bower_components",
     "tests"
   ],
-  "version": "0.9.3",
+  "version": "0.9.4",
   "homepage": "https://github.com/ws-anashkin/angular-leaflet-directive",
   "authors": [
     "ws-anashkin <ws.anashkin@gmail.com>"
   ],
   "license": "MIT",
-  "_release": "0.9.3",
+  "_release": "0.9.4",
   "_resolution": {
     "type": "version",
     "tag": "v0.9.4",
